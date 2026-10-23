@@ -93,7 +93,7 @@
         '<text class="v4-ct" x="150" y="146">' + L(t("Внутренний", "Inner")) + '</text><text class="v4-cs" x="150" y="163">ENL</text>' +
         '<text class="v4-ct" x="150" y="76">' + L(t("Внешний", "Outer")) + '</text><text class="v4-cs" x="150" y="92">ESL</text>' +
         '<text class="v4-ct" x="150" y="28">' + L(t("Расширяющийся", "Expanding")) + '</text><text class="v4-cs" x="150" y="44">EFL</text></svg>';
-      var leg = [[t("Внутренний круг: родной язык", "Inner circle: native language"), t("Великобритания, США, Ирландия, Канада, Австралия, Новая Зеландия", "UK, USA, Ireland, Canada, Australia, New Zealand"), "v4-l1"],
+      var leg = [[t("Внутренний круг: родной язык", "Inner circle: native language"), t("США, Великобритания, Канада, Австралия, Новая Зеландия; позже часто добавляют Ирландию", "USA, UK, Canada, Australia, New Zealand; later authors often add Ireland"), "v4-l1"],
         [t("Внешний круг: второй, официальный язык", "Outer circle: second, official language"), t("Индия, Нигерия, Сингапур, Филиппины", "India, Nigeria, Singapore, the Philippines"), "v4-l2"],
         [t("Расширяющийся круг: иностранный язык", "Expanding circle: foreign language"), t("Россия, Китай, Япония, Бразилия", "Russia, China, Japan, Brazil"), "v4-l3"]];
       return '<div class="v4-kach">' + svg + '<div class="v4-kleg">' + leg.map(function (x) { return '<div class="' + x[2] + '"><b>' + L(x[0]) + "</b><span>" + L(x[1]) + "</span></div>"; }).join("") + "</div></div>" +
@@ -269,7 +269,7 @@
           ["STRUT " + I("[ʌ]"), I("[a] ~ [ɐ]"), E("blood") + " " + I("[blad]")],
           ["happY " + I("[ɪ]"), I("[iː]"), E("city") + " " + I("[ˈsɪʔiː]")],
           ["FACE " + I("[eɪ]"), I("[æɪ] ~ [aɪ]"), E("lady") + " " + I("[ˈlæɪdiː]")],
-          ["GOAT " + I("[əʊ]"), I("[æʊ]"), E("soaked") + " " + I("[sæʊkt]")],
+          ["GOAT " + I("[əʊ]"), I("[æʊ] ~ [ɐʊ]"), E("soaked") + " " + I("[sæʊkt]")],
           ["MOUTH " + I("[aʊ]"), I("[æə] ~ [æː]"), E("now") + " " + I("[næə]")],
           ["THOUGHT " + I("[ɔː]"), I("[oː]; [ɔə]") + " " + L(t("в конце", "finally")), E("pause, paw") + " " + I("[poːz] [pɔə]")]
         ], "fg-mini")) +
@@ -292,11 +292,11 @@
           ["happY " + I("[iː]"), E("city") + " " + I("[ˈsɪtiː]")],
           ["BATH " + I("[æ] ~ [a]"), E("dance, chance") + " " + I("[dæns] [tʃæns]")],
           ["FACE, GOAT " + L(t("монофтонги или", "monophthongs or")) + " " + I("[ɪə] [ʊə]"), E("plate, boat") + " " + I("[pleːt] [boːt]")],
-          [I("al") + " " + L(t("как", "as")) + " " + I("[ɑː]"), E("talk, all") + " " + I("[tɑːk] [ɑːl]")],
+          [I("al") + " " + L(t("как", "as")) + " " + I("[aː]"), E("talk, all") + " " + I("[taːk] [aːl]")],
           ["NURSE " + I("[ɔː]"), E("first, shirt") + " " + I("[fɔːst] [ʃɔːt]")],
           ["PRICE " + I("[ɛɪ]") + ", MOUTH " + I("[uː]"), E("right, about") + " " + I("[rɛɪt] [əˈbuːt]")],
           [t("светлый " + I("[l]") + "; " + I("[h]") + " сохраняется", "clear " + I("[l]") + "; " + I("[h]") + " is kept"), E("hill") + " " + I("[hɪl]")],
-          [t("глоттализованные " + I("[p t k]") + "; увулярный " + I("[ʁ]") + " в Нортумберленде", "glottalized " + I("[p t k]") + "; uvular " + I("[ʁ]") + " in Northumberland"), E("pity") + " " + I("[ˈpɪʔtiː]")]
+          [t("глоттализованные " + I("[p t k]") + "; увулярный " + I("[ʁ]") + " почти исчез", "glottalized " + I("[p t k]") + "; uvular " + I("[ʁ]") + " has almost disappeared"), E("pity") + " " + I("[ˈpɪʔtiː]")]
         ], "fg-mini")) +
         box(t("Йоркшир", "Yorkshire"), table([t("Черта", "Feature"), t("Пример", "Example")], [
           ["STRUT " + I("[ʊ]"), E("cup") + " " + I("[kʊp]")],
@@ -310,15 +310,15 @@
 
     mle: function () {
       return table([t("Черта", "Feature"), t("Пример", "Example"), t("Комментарий", "Comment")], [
-        ["FACE " + I("[eɪ] ~ [eː]"), E("face"), t("ядро выше, чем в кокни " + I("[æɪ]"), "a closer nucleus than Cockney " + I("[æɪ]"))],
-        ["PRICE " + I("[aː] ~ [æː]"), E("time"), t("монофтонг или узкий дифтонг", "a monophthong or a narrow diphthong")],
-        ["GOAT " + I("[oː] ~ [oʊ]"), E("home"), t("заднее ядро, в отличие от " + I("[æʊ]") + " кокни", "a back nucleus, unlike Cockney " + I("[æʊ]"))],
+        ["FACE " + I("[e̝ɪ] ~ [eː]"), E("face"), t("ядро выше, чем в кокни " + I("[æɪ]"), "a closer nucleus than Cockney " + I("[æɪ]"))],
+        ["PRICE " + I("[aɪ] ~ [a]"), E("time"), t("ядро более переднее, чем " + I("[ɑɪ]") + " кокни; возможен монофтонг", "a fronter nucleus than Cockney " + I("[ɑɪ]") + "; a monophthong is possible")],
+        ["GOAT " + I("[oː] ~ [ɔʊ]"), E("home"), t("заднее ядро, в отличие от " + I("[ɐʊ]") + " кокни", "a back nucleus, unlike Cockney " + I("[ɐʊ]"))],
         ["GOOSE " + I("[yː]"), E("school"), t("сильное продвижение вперёд", "strong fronting")],
         [t("TH-fronting, " + I("[d]") + " вместо " + I("[ð]"), "TH-fronting, " + I("[d]") + " for " + I("[ð]")), E("think, them") + " " + I("[fɪŋk] [dem]"), t("общие с кокни", "shared with Cockney")],
-        [t(I("[k]") + " отодвигается назад", "backed " + I("[k]")), E("cousin") + " " + I("[qʌzn]"), t("перед задними гласными", "before back vowels")],
+        [t(I("[k]") + " отодвигается назад", "backed " + I("[k]")), E("cousin") + " " + I("[qʌzn]"), t("перед задними гласными нижнего и среднего подъёма", "before non-high back vowels")],
         [t("меньше опущения " + I("[h]"), "less H-dropping"), E("house") + " " + I("[haʊs]"), t("в отличие от кокни", "unlike Cockney")],
-        [t("ритм ближе к слоговому", "rhythm closer to syllable-timed"), "—", t("влияние языков иммигрантов", "influence of immigrant languages")]
-      ]) + note(t("Multicultural London English сложился в многоязычных районах восточного Лондона в 1990–2000-е годы. Соколова его не описывает; данные — по исследованиям Дж. Чешир, П. Кервилла, С. Фокс, Э. Торгерсена (2011).", "Multicultural London English emerged in multilingual areas of East London in the 1990s–2000s. Sokolova does not describe it; the data come from research by J. Cheshire, P. Kerswill, S. Fox and E. Torgersen (2011)."));
+        [t("ритм ближе к слоговому", "rhythm closer to syllable-timed"), "—", t("у молодёжи неанглийского происхождения (Torgersen & Szakay 2012)", "in young speakers of non-Anglo background (Torgersen & Szakay 2012)")]
+      ]) + note(t("Multicultural London English сложился в многоязычных районах восточного Лондона в 1990–2000-е годы. Соколова его не описывает; данные — по исследованиям П. Кервилла, Дж. Чешир, С. Фокс и Э. Торгерсена (2008, 2011). Кервилл описывает изменения дифтонгов как обращение Diphthong Shift: ядра возвращаются к значениям, близким к RP.", "Multicultural London English emerged in multilingual areas of East London in the 1990s–2000s. Sokolova does not describe it; the data come from research by P. Kerswill, J. Cheshire, S. Fox and E. Torgersen (2008, 2011). Kerswill describes the diphthong changes as a reversal of the Diphthong Shift: the nuclei move back towards RP-like values."));
     },
 
     ruDialects: function () {
@@ -340,7 +340,7 @@
           [t("конечный " + I("[iː]"), "final " + I("[iː]")), E("city") + " " + I("[ˈsɪtiː]")],
           [I("[ɪu]") + " " + L(t("вместо", "for")) + " " + I("[juː]"), E("tune, few") + " " + I("[tɪun] [fɪu]")],
           [t("монофтонги в FACE, GOAT", "monophthongs in FACE, GOAT"), E("bake, boat") + " " + I("[beːk] [boːt]")],
-          [t("NURSE с округлением", "rounded NURSE"), E("girl") + " " + I("[ɡøːl]")],
+          [t("NURSE с округлением (юго-восток)", "rounded NURSE (south-east)"), E("church") + " " + I("[tʃøːtʃ]")],
           [t("нет " + I("[ɪə] [ʊə]"), "no " + I("[ɪə] [ʊə]")), E("fear, poor") + " " + I("[ˈfiːjə] [ˈpuːwə]")]
         ], "fg-mini")) +
         box(t("Согласные и интонация", "Consonants and intonation"), table(["", t("Пример", "Example")], [
@@ -348,7 +348,7 @@
           [t("удвоение согласного после краткого гласного", "consonant doubling after a short vowel"), E("city") + " " + I("[ˈsɪtːiː]")],
           [t("сильная аспирация; конечные смычные без глоттализации", "strong aspiration; final stops not glottalized"), E("pit") + " " + I("[pʰɪtʰ]")],
           [t("светлый " + I("[l]") + " во всех позициях", "clear " + I("[l]") + " in all positions"), E("feel")],
-          [t("в валлийских именах " + I("[ɬ]") + " и " + I("[x]"), I("[ɬ]") + " and " + I("[x]") + " in Welsh names"), E("Llanelli, Bach")]
+          [t("в валлийских именах " + I("[ɬ]") + " и увулярный " + I("[χ]"), I("[ɬ]") + " and uvular " + I("[χ]") + " in Welsh names"), E("Llanfynydd, Amlwch")]
         ], "fg-mini") + p(t("Интонация испытывает сильное влияние валлийского языка: её часто называют «певучей» — частые подъёмы на ударных слогах, широкий диапазон.", "Intonation is strongly influenced by Welsh and is often called “sing-song”: frequent rises on stressed syllables and a wide range."))) +
         "</div>" + note(t("Уэльс — двуязычная территория. Такую ситуацию называют экзоглоссной: английский господствует в городах, на востоке и северо-востоке, валлийский сильнее на западе и северо-западе.", "Wales is bilingual. Such a situation is called exoglossic: English dominates in towns, the east and north-east, Welsh is stronger in the west and north-west."));
     },
@@ -414,7 +414,7 @@
         box(t("Восточный тип", "Eastern"), p(t("Новая Англия, Нью-Йорк. Напоминает южноанглийское произношение: часто неротический.", "New England, New York City. Resembles Southern English: often non-rhotic."))) +
         box(t("Южный тип", "Southern"), p(t("Юг и юго-восток США. Протяжность (drawl): дифтонгизация и даже трифтонгизация гласных, монофтонгизация " + I("[aɪ]") + ": " + E("time") + " " + I("[taːm]") + ".", "The South and South-East. The drawl: diphthongization and even triphthongization of vowels, monophthongization of " + I("[aɪ]") + ": " + E("time") + " " + I("[taːm]") + "."))) +
         box(t("General American", "General American"), p(t("Северные и западные штаты. Стандарт радио и телевидения, науки и бизнеса.", "The northern and western states. The standard of radio and television, science and business.")), "fg-acc") +
-        "</div>" + note(t("Классификация по Швейцеру и Соколовой. Уэллс подчёркивает, что GA — скорее совокупность похожих акцентов без явных региональных примет, чем один акцент; его называют также Network English.", "The classification follows Shweitzer and Sokolova. Wells stresses that GA is rather a group of similar accents without obvious regional marks than a single accent; it is also called Network English."));
+        "</div>" + note(t("Классификация по Швейцеру и Соколовой. Уэллс называет GA речь двух третей американцев, у которых нет явно локального акцента, и подчёркивает, что это «отнюдь не единый акцент».", "The classification follows Shweitzer and Sokolova. Wells applies GA to the two thirds of Americans without a recognizably local accent and stresses that it is “by no means a uniform accent”."));
     },
 
     gaVowels: function () {
@@ -438,7 +438,7 @@
         [t("" + I("[r]") + " ретрофлексный", "retroflex " + I("[r]")), E("far") + " " + I("[fɑɻ]"), I("[fɑː]")],
         [t("" + I("[ʍ]") + " в " + E("wh") + "-словах", I("[ʍ]") + " in " + E("wh") + "-words"), E("where – ware") + " " + I("[ʍɛr] [wɛr]"), I("[weə]")],
         [t("" + I("[j]") + " выпадает после переднеязычных", I("[j]") + " drops after alveolars"), E("news, Tuesday, student") + " " + I("[nuz] [ˈtuzdeɪ]"), I("[njuːz]")]
-      ]) + note(t("Соколова пишет, что большинство американцев различают " + E("where – ware, which – witch") + ". Уэллс и Линдси отмечают, что совпадение " + I("[ʍ]") + " с " + I("[w]") + " в США широко распространилось: различие сохраняется у меньшинства, в основном на Юге.", "Sokolova says most Americans distinguish " + E("where – ware, which – witch") + ". Wells and Lindsey note that the merger of " + I("[ʍ]") + " with " + I("[w]") + " has spread widely in the US: the contrast survives with a minority, mainly in the South."));
+      ]) + note(t("Соколова пишет, что большинство американцев различают " + E("where – ware, which – witch") + ". Уэллс (1982) тоже называет " + I("[hw]") + " широко распространённым в Северной Америке, но отмечает, что совпадение с " + I("[w]") + " растёт в крупных городах. По данным «Атласа североамериканского английского» (Labov, Ash, Boberg 2006), различие сохранили лишь 71 из 587 опрошенных, в основном на Юге, в Техасе и отчасти в Новой Англии.", "Sokolova says most Americans distinguish " + E("where – ware, which – witch") + ". Wells (1982) also calls " + I("[hw]") + " widespread in North America but notes that the merger with " + I("[w]") + " is growing in big cities. According to the Atlas of North American English (Labov, Ash, Boberg 2006), only 71 of 587 speakers kept the contrast, mainly in the South, Texas and partly New England."));
     },
 
     gaWords: function () {
@@ -510,11 +510,11 @@
 
     innerCircle: function () {
       return table([t("Акцент", "Accent"), t("Яркие черты", "Hallmark features"), t("Пример", "Example")], [
-        ["<b>" + L(t("Австралийский", "Australian")) + "</b>", t("неротический; FACE " + I("[æɪ]") + ", PRICE " + I("[ɑe]") + ", GOAT " + I("[əʉ]") + ", GOOSE " + I("[ʉː]") + "; " + E("dance") + " с " + I("[æ]") + ", " + E("path") + " с " + I("[ɐː]") + "; подъём на утверждениях (HRT)", "non-rhotic; FACE " + I("[æɪ]") + ", PRICE " + I("[ɑe]") + ", GOAT " + I("[əʉ]") + ", GOOSE " + I("[ʉː]") + "; " + E("dance") + " with " + I("[æ]") + ", " + E("path") + " with " + I("[ɐː]") + "; rises on statements (HRT)"), E("mate") + " " + I("[mæɪt]")],
-        ["<b>" + L(t("Новозеландский", "New Zealand")) + "</b>", t("неротический; KIT централизован " + I("[ɘ]") + ", DRESS и TRAP повышены; NEAR и SQUARE совпадают", "non-rhotic; KIT centralized " + I("[ɘ]") + ", DRESS and TRAP raised; NEAR and SQUARE merged"), E("fish and chips") + " " + I("[fɘʃ ən tʃɘps]")],
+        ["<b>" + L(t("Австралийский", "Australian")) + "</b>", t("неротический; FACE " + I("[æɪ]") + ", PRICE " + I("[ɑe]") + ", GOAT " + I("[əʉ]") + ", GOOSE " + I("[ʉː]") + "; " + E("dance") + " часто с " + I("[æ]") + ", " + E("path") + " с " + I("[ɐː]") + "; подъём на утверждениях (HRT)", "non-rhotic; FACE " + I("[æɪ]") + ", PRICE " + I("[ɑe]") + ", GOAT " + I("[əʉ]") + ", GOOSE " + I("[ʉː]") + "; " + E("dance") + " often with " + I("[æ]") + ", " + E("path") + " with " + I("[ɐː]") + "; rises on statements (HRT)"), E("mate") + " " + I("[mæɪt]")],
+        ["<b>" + L(t("Новозеландский", "New Zealand")) + "</b>", t("неротический (кроме Саутленда); KIT централизован до " + I("[ə]") + ", DRESS и TRAP повышены; NEAR и SQUARE у молодёжи совпадают", "non-rhotic (except Southland); KIT centralized to " + I("[ə]") + ", DRESS and TRAP raised; NEAR and SQUARE merged among the young"), E("fish and chips") + " " + I("[fəʃ ən tʃəps]")],
         ["<b>" + L(t("Ирландский (Республика)", "Irish (Republic)")) + "</b>", t("ротический; " + I("[t̪ d̪]") + " на месте " + I("[θ ð]") + "; светлый " + I("[l]") + "; FACE, GOAT монофтонги", "rhotic; " + I("[t̪ d̪]") + " for " + I("[θ ð]") + "; clear " + I("[l]") + "; FACE, GOAT monophthongs"), E("think") + " " + I("[t̪ɪŋk]")],
         ["<b>" + L(t("Канадский", "Canadian")) + "</b>", t("ротический; канадское повышение " + I("[ʌɪ ʌʊ]") + " перед глухими; " + E("cot = caught") + "; " + I("[ɾ]") + " между гласными", "rhotic; Canadian raising " + I("[ʌɪ ʌʊ]") + " before voiceless consonants; " + E("cot = caught") + "; " + I("[ɾ]") + " between vowels"), E("about") + " " + I("[əˈbʌʊt]")],
-        ["<b>" + L(t("Южноафриканский", "South African")) + "</b>", t("неротический; KIT расщеплён " + I("[ɪ] ~ [ə]") + "; " + I("[r]") + " часто одноударный", "non-rhotic; KIT split " + I("[ɪ] ~ [ə]") + "; " + I("[r]") + " often a tap"), E("bit") + " " + I("[bət]")],
+        ["<b>" + L(t("Южноафриканский", "South African")) + "</b>", t("неротический; KIT расщеплён: " + I("[ɪ]") + " у велярных (" + E("kit") + "), " + I("[ə]") + " в остальных позициях; в Broad-варианте " + I("[r]") + " одноударный", "non-rhotic; KIT split: " + I("[ɪ]") + " next to velars (" + E("kit") + "), " + I("[ə]") + " elsewhere; in Broad SAE " + I("[r]") + " is a tap"), E("bit") + " " + I("[bət]")],
         ["<b>" + L(t("Нью-Йорк", "New York City")) + "</b>", t("традиционно неротический; THOUGHT повышен " + I("[ɔə]") + "; напряжённый " + I("[æə]") + " в " + E("bad, man"), "traditionally non-rhotic; THOUGHT raised " + I("[ɔə]") + "; tense " + I("[æə]") + " in " + E("bad, man")), E("coffee") + " " + I("[ˈkɔəfi]")],
         ["<b>" + L(t("Юг США", "Southern US")) + "</b>", t("протяжность; PRICE монофтонг " + I("[aː]") + "; " + E("pin = pen"), "the drawl; PRICE monophthong " + I("[aː]") + "; " + E("pin = pen")), E("I") + " " + I("[aː]")]
       ]) + note(t("Ориентиры по Дж. Уэллсу (т. 3, 1982) для первого прослушивания. Описывай то, что слышишь в своей записи: у конкретного говорящего части черт может не быть.", "Pointers after J. Wells (vol. 3, 1982) for a first listening. Describe what you hear in your recording: a particular speaker may lack some of these features."));

@@ -134,7 +134,7 @@
         { a: E("dog") + " " + I("[dɒɡ]"), ok: 0, fb: t("Округлённый " + I("[ɒ]") + " есть только в RP.", "Rounded " + I("[ɒ]") + " exists only in RP.") },
         { a: E("water") + " " + I("[ˈwɑɾɚ]"), ok: 1, fb: t("Одноударный " + I("[ɾ]") + " и r-окрашенный гласный.", "A flap " + I("[ɾ]") + " and an r-coloured vowel.") },
         { a: E("news") + " " + I("[njuːz]"), ok: 0, fb: t("В GA " + I("[j]") + " после " + I("[n]") + " выпадает: " + I("[nuz]") + ".", "GA drops " + I("[j]") + " after " + I("[n]") + ": " + I("[nuz]") + ".") },
-        { a: E("schedule") + " " + I("[ˈskɛdʒəl]"), ok: 1, fb: t("В RP " + I("[ˈʃedjuːl]") + ".", "RP has " + I("[ˈʃedjuːl]") + ".") },
+        { a: E("schedule") + " " + I("[ˈskedʒuːl]"), ok: 1, fb: t("В RP " + I("[ˈʃedjuːl] ~ [ˈʃedʒuːl]") + ".", "RP has " + I("[ˈʃedjuːl] ~ [ˈʃedʒuːl]") + ".") },
         { a: E("ballet") + " " + I("[ˈbæleɪ]"), ok: 0, fb: t("В GA ударение на последнем слоге.", "GA stresses the last syllable.") },
         { a: E("address") + " " + I("[ˈædrɛs]"), ok: 1, fb: t("В GA ударение на первом слоге.", "GA stresses the first syllable.") },
         { a: E("dear") + " " + I("[dɪə]"), ok: 0, fb: t("Центрирующий дифтонг — неротический RP.", "A centring diphthong — non-rhotic RP.") }

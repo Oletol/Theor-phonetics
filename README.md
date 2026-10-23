@@ -2,7 +2,7 @@
 
 Интерактивный курс канала «Чердак» (t.me/engattic) по теоретической фонетике английского языка. Темы соответствуют вопросам семинаров; в каждой теме — практика, теория с инфографикой, сопоставление с русским языком, автопроверяемое задание с порогом зачёта и тест.
 
-Сейчас готовы семинары 2 и 3 (по 5 тем). Для семинаров 1 и 4–7 на карте курса оставлены места.
+Сейчас готовы семинары 2 и 3 (по 5 тем) и семинар 4 (6 тем). Для семинаров 1 и 5–7 на карте курса оставлены места.
 
 ## Структура
 
@@ -16,13 +16,16 @@ assets/img/               logo.svg, favicon.svg, logo-mark.svg, logo-512.png
 assets/js/i18n.js         строки интерфейса RU/EN, помощники t(), L(), U()
 assets/js/course-s2.js    семинар 2: темы, карточки, задания, тесты
 assets/js/course-s3.js    семинар 3
+assets/js/course-s4.js    семинар 4: территориальные варианты произношения и задание к семинару
 assets/js/course.js       список семинаров 1–7, литература, глоссарий
 assets/js/store.js        прогресс (localStorage, экспорт и импорт JSON)
 assets/js/figures.js      инфографика к теории (window.Figures), тонограммы staff()
 assets/js/figures-2.js    дополнительные схемы: взгляды на фонему, форманты act/apt, школы, слог, разметка, ToBI
 assets/js/figures-3.js    схемы к карточкам, где был только текст; типы шкал (знаки шкал рисуются SVG)
+assets/js/figures-4.js    схемы семинара 4: варианты, RP и SSB, акценты, GA, критерии задания
 assets/js/demos.js        интерактивные демо (window.Demos)
 assets/js/demos-2.js      демо «Проинтонируй фразу»
+assets/js/demos-3.js      демо семинара 4: классификация черт, сравнение акцентов, поиск отличий от RP
 assets/js/trainer.js      тренажёр: смешанные наборы из всех заданий
 assets/js/app.js          роутер и рендер страниц
 scripts/                  fetch-fonts.js, fonts.config.js
@@ -32,10 +35,10 @@ scripts/                  fetch-fonts.js, fonts.config.js
 
 ## Как добавить семинар
 
-1. Скопируй `assets/js/course-s3.js` в `assets/js/course-s4.js`, замени `window.COURSE_S3` на `window.COURSE_S4`, поменяй `n`, `title`, `goal` и массив `modules`.
+1. Скопируй `assets/js/course-s4.js` в `assets/js/course-s5.js`, замени `window.COURSE_S4` на `window.COURSE_S5`, поменяй `n`, `title`, `goal` и массив `modules`.
 2. Подключи файл в `index.html` перед `course.js`.
-3. В `assets/js/course.js` замени строку `placeholder(4, …)` на `window.COURSE_S4`.
-4. При необходимости добавь термины в `glossary[4]` и источники в `R`.
+3. В `assets/js/course.js` замени строку `placeholder(5, …)` на `window.COURSE_S5`.
+4. При необходимости добавь термины в `glossary[5]` и источники в `R`.
 
 ## Как добавить тему
 

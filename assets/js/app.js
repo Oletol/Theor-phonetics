@@ -150,7 +150,7 @@
     if (card.task) html += '<div class="task-host"></div>';
     if (card.quiz) html += '<div class="quiz-host"></div>';
     if (card.fact) html += '<aside class="fact"><span class="fact-k">' + U("fact") + '</span><p>' + L(card.fact.text) + '</p><span class="fact-ref">' + card.fact.ref + "</span></aside>";
-    if (card.sources) html += '<p class="src">' + U("sources") + ": " + card.sources.join("; ") + "</p>";
+    if (card.sources) html += '<p class="src">' + U("sources") + ": " + card.sources.map(L).join("; ") + "</p>";
     var el = document.createElement("div"); el.innerHTML = html;
     if (card.demo) { var d = el.querySelector(".demo"); Demos[card.demo](d, { L: L, U: U, h: h, esc: esc, shuffle: shuffle, done: function () { Store.taskDone("demo-" + mod.id + "-" + stepIdx, 1, 1); } }); }
     if (card.task) runTask(el.querySelector(".task-host"), card.task);
